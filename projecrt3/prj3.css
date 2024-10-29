@@ -1,0 +1,28 @@
+body {
+    font-family: Verdana, sans-serif;
+  }
+  
+  /* h2 style */
+  h2 {
+    color: #003E1F;
+  }
+  
+  /* h3 style */
+  h3 {
+    color: #053C5E;
+    margin-bottom: 10px;
+  }
+  
+  /* style for images */
+  img {
+    width: auto;
+    height: 200px;
+    border: 2px solid #003E1F;
+  }
+  
+  .gallery { display: flex; flex-wrap: wrap; gap: 20px; /* Space between boxes */ } 
+  
+  .animal-card { width: 250px; height: 300px; border: 1px solid #ccc; /* Optional border */ border-radius: 8px; /* Optional rounded corners */ overflow: hidden; /* Prevents overflow of text and image */ display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #f9f9f9; /* Optional background color */ }
+  
+  .animal-card img { width: 100%; height: auto; /* Keep image aspect ratio */ max-height: 150px; /* Limit image height */ } .animal-card h3 { margin: 10px 0 5px; } .animal-card p { margin: 5px 0; }  
+  
