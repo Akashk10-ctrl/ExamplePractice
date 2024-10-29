@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <link rel="stylesheet" href="prj3.css">
-  </head>
+    <style>
+        .featured-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px; /* Adjust the gap between the two sections */
+        }
+        .featured-section,
+        .conservation-section {
+            background-color: #e6ffe6; /* Optional: Add background for better visibility */
+            padding: 20px;
+            border-radius: 8px; /* Optional: Add rounded corners */
+            width: 300px; /* Set a width for the sections */
+        }
+    </style>
+</head>
 
-  <body>
+<body>
 
     <!-- header title and introduction -->
-    <div style=" background-color: #228822; text-align: center;  font-size: 16px;">
-      <h1>Wild Guardian</h1>
-      <p>Welcome to a journey through the eyes of those seldom seen. This website is dedicated to showcasing the beauty of endangered species around the globe.</p>
-      <p>Our goal is to educate and inspire action towards conservation efforts.</p>
+    <div style="background-color: #228822; text-align: center; font-size: 16px;">
+        <h1>Wild Guardian</h1>
+        <p>Welcome to a journey through the eyes of those seldom seen. This website is dedicated to showcasing the beauty of endangered species around the globe.</p>
+        <p>Our goal is to educate and inspire action towards conservation efforts.</p>
     </div>
 
     <!-- container for featured species of the month -->
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f5f5dc; padding: 20px;">
-      <!-- container for content on species list -->
-      <div>
-        <h2>🌟 Featured Species</h2>
-        <ul>
-          <li>Amur Leopard</li>
-          <li>Sumatran Elephant</li>
-          <li>Mountain Gorilla</li>
-        </ul>
-      </div>
+        <h2>🌟 Featured Species & 🌳 Top Conservation Efforts</h2>
+        <div class="featured-container">
+            <!-- container for content on species list -->
+            <div class="featured-section">
+                <h3>Featured Species</h3>
+                <ul>
+                    <li>Amur Leopard</li>
+                    <li>Sumatran Elephant</li>
+                    <li>Mountain Gorilla</li>
+                </ul>
+            </div>
 
-      <!-- container for content on top conservation efforts of the month -->
-      <div style="text-align: center;">
-        <h2>🌳 Top Conservation Efforts</h2>
-        <ol>
-          <li>Wildlife Protection Initiatives</li>
-          <li>Habitat Restoration Projects</li>
-          <li>Community Education and Engagement</li>
-        </ol>
-      </div>
+            <!-- container for content on top conservation efforts of the month -->
+            <div class="conservation-section">
+                <h3>Top Conservation Efforts</h3>
+                <ol>
+                    <li>Wildlife Protection Initiatives</li>
+                    <li>Habitat Restoration Projects</li>
+                    <li>Community Education and Engagement</li>
+                </ol>
+            </div>
+        </div>
     </div>
 
     <!-- photo gallery of endangered species -->
     <h2>🖼️ Gallery</h2>
     <div class="gallery">
-      <!-- the amur leopard -->
-      <div class="animal-card">
-        <img src="amur_leopard.jpg" alt="Amur Leopard">
-        <h3>Amur Leopard</h3>
-        <p>Status: Critically Endangered</p>
-        <p>Population: more than 84 individuals</p>
-      </div>
+        <!-- the amur leopard -->
+        <div class="animal-card">
+            <img src="amur_leopard.jpg" alt="Amur Leopard">
+            <h3>Amur Leopard</h3>
+            <p>Status: Critically Endangered</p>
+            <p>Population: more than 84 individuals</p>
+        </div>
 
-      <!-- animal card - the sumatran elephant -->
-      <div class="animal-card">
-        <img src="sumatran_elephant.jpg" alt="Sumatran Elephant">
-        <h3>Sumatran Elephant</h3>
-        <p>Status: Critically Endangered</p>
-        <p>Population: 2,400 - 2,800</p>
-      </div>
+        <!-- animal card - the sumatran elephant -->
+        <div class="animal-card">
+            <img src="sumatran_elephant.jpg" alt="Sumatran Elephant">
+            <h3>Sumatran Elephant</h3>
+            <p>Status: Critically Endangered</p>
+            <p>Population: 2,400 - 2,800</p>
+        </div>
 
-      <!-- animal card - the mountain gorilla -->
-      <div class="animal-card">
-        <img src="mountain_gorilla.jpg" alt="Mountain Gorilla">
-        <h3>Mountain Gorilla</h3>
-        <p>Status: Endangered</p>
-        <p>Population: more than 1,000</p>
-      </div>
+        <!-- animal card - the mountain gorilla -->
+        <div class="animal-card">
+            <img src="mountain_gorilla.jpg" alt="Mountain Gorilla">
+            <h3>Mountain Gorilla</h3>
+            <p>Status: Endangered</p>
+            <p>Population: more than 1,000</p>
+        </div>
 
-      <!-- animal card - the vaquita -->
-      <div class="animal-card">
-        <img src="vaquita.jpg" alt="Vaquita">
-        <h3>Vaquita</h3>
-        <p>Status: Critically Endangered</p>
-        <p>Population: about 10 individuals</p>
-      </div>
+        <!-- animal card - the vaquita -->
+        <div class="animal-card">
+            <img src="vaquita.jpg" alt="Vaquita">
+            <h3>Vaquita</h3>
+            <p>Status: Critically Endangered</p>
+            <p>Population: about 10 individuals</p>
+        </div>
 
-      <!-- animal card - the javan rhino -->
-      <div class="animal-card">
-        <img src="javan_rhino.jpg" alt="Javan Rhino">
-        <h3>Javan Rhino</h3>
-        <p>Status: Critically Endangered</p>
-        <p>Population: about 70</p>
-      </div>
+        <!-- animal card - the javan rhino -->
+        <div class="animal-card">
+            <img src="javan_rhino.jpg" alt="Javan Rhino">
+            <h3>Javan Rhino</h3>
+            <p>Status: Critically Endangered</p>
+            <p>Population: about 70</p>
+        </div>
 
-      <!-- animal card - the snow leopard -->
-      <div class="animal-card">
-        <img src="snow_leopard.jpg" alt="Snow Leopard">
-        <h3>Snow Leopard</h3>
-        <p>Status: Vulnerable</p>
-        <p>Population: 4,000 - 6,500</p>
-      </div>
-
+        <!-- animal card - the snow leopard -->
+        <div class="animal-card">
+            <img src="snow_leopard.jpg" alt="Snow Leopard">
+            <h3>Snow Leopard</h3>
+            <p>Status: Vulnerable</p>
+            <p>Population: 4,000 - 6,500</p>
+        </div>
     </div>
 
     <!-- credit for the images and facts -->
     <div>
-      <p>images and facts courtesy of World Wildlife Fund <br /> www.worldwildlife.org</p>
+        <p>Images and facts courtesy of World Wildlife Fund <br /> www.worldwildlife.org</p>
     </div>
 
-  </body>
+</body>
 
 </html>
