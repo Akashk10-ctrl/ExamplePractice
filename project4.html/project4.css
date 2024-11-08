@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Set Background Image */
+  body, html {
+    height: 100%;
+  }
+  
+  .main-container {
+    background-image: url('Screenshot\ 2024-09-23\ 142816.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main Box */
+  .main-box {
+    background-color:brown;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Row of Smaller Boxes */
+  .box-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Small Boxes */
+  .small-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    z-index: 1;
+  }
+  
+  /* Unique Backgrounds for Each Box - Hover Effect */
+  .small-box:nth-child(1)::before {
+    background-image: url('Screenshot\ 2024-11-07\ 132951.png');
+  }
+  .small-box:nth-child(2)::before {
+    background-image: url('Screenshot\ 2024-11-07\ 133425.png');
+  }
+  .small-box:nth-child(3)::before {
+    background-image: url('Screenshot\ 2024-11-06\ 133038.png');
+  }
+  
+  /* General Settings for Pseudo-elements */
+  .small-box::before,
+  .small-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+  
+  /* Hover Effect */
+  .small-box:hover::before {
+    opacity: 0.8; /* Slightly visible overlay */
+  }
+  
+  /* Enhanced Hover Effect using JavaScript-added Active Class */
+  .small-box.active {
+    transform: scale(1.3); /* Enlarged to 1.3 times its size */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Stronger shadow */
