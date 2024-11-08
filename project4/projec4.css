@@ -20,7 +20,14 @@
     justify-content: center;
     align-items: center;
   }
-
+ AKASH.png{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  }
   /* Main Box */
   .main-box {
     background-color:brown;
