@@ -30,7 +30,7 @@
   }
   /* Main Box */
   .main-box {
-    background-color:brown;
+    background-color:cyan;
     padding: 30px;
     width: 100%;
     max-width: 600px;
@@ -81,8 +81,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 150%;
-    height: 150%;
+    width: 200%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0;
